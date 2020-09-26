@@ -200,23 +200,142 @@ header .rightmenu .z span {
   margin-left: 180.5px;
 }
 
-.goods1, .goods2, .goods3, .goods4, .goods5 {
-  width: 1150px;
+.goods1, .goods2, .goods3, .goods5 {
+  width: 1149px;
+  margin: 40px 30px;
+}
+.goods1 img, .goods2 img, .goods3 img, .goods5 img {
+  width: 228px;
+  height: 250px;
+  background-color: #f9f9f9;
+}
+.goods1 a, .goods2 a, .goods3 a, .goods5 a {
+  margin-left: 10px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+}
+.goods1 .div, .goods2 .div, .goods3 .div, .goods5 .div {
+  width: 227px;
+  height: 384px;
+  background-color: #fafafa;
+  margin-top: 10px;
+  margin-right: 2px;
+  float: left;
+}
+.goods1 h1, .goods2 h1, .goods3 h1, .goods5 h1 {
+  font-size: 28px;
 }
 
-.goods1 {
+.goods4 {
+  width: 1149px;
+  margin: 40px 30px;
+}
+.goods4 .div {
+  width: 227px;
+  height: 384px;
+  background-color: #fafafa;
+  margin-top: 10px;
+  margin-right: 2px;
+  float: left;
+}
+
+.goods1, .goods4 {
   height: 427px;
-  background-color: #ffa;
+}
+.goods1 .title, .goods4 .title {
+  height: 40px;
+  display: block;
+}
+.goods1 .price, .goods4 .price {
+  margin: 10px 0;
+  padding: 0 24px;
+  font-size: 17px;
+  color: #B12704;
+}
+.goods1 h4, .goods4 h4 {
+  margin: 10px 0;
+  padding: 0 24px;
+}
+.goods1 .time, .goods4 .time {
+  margin: 10px 0;
+  padding: 0 24px;
+}
+
+.goods2 .listbox, .goods3 .listbox, .goods5 .listbox {
+  width: 1150px;
+  height: 322px;
+  border: 1px solid #d8d8d8;
+  margin-top: 10px;
+}
+.goods2 .listbox .div1, .goods3 .listbox .div1, .goods5 .listbox .div1 {
+  float: left;
+}
+.goods2 img, .goods3 img, .goods5 img {
+  height: 270px;
+}
+.goods2 .det, .goods3 .det, .goods5 .det {
+  height: 52px;
+  width: 202px;
+  padding: 10px 14px 0 14px;
 }
 
 .goods2, .goods3, .goods5 {
   height: 365px;
-  background-color: #ccc;
 }
 
 .goods4 {
   height: 654px;
-  background-color: #faf;
+}
+.goods4 .title {
+  margin-bottom: 10px;
+}
+.goods4 .logogroup ul {
+  list-style-type: none;
+}
+.goods4 .logogroup li {
+  width: 227px;
+  height: 200px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background-color: #f7f7f7;
+  float: left;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods4 .logogroup li .box {
+  width: 160px;
+  height: 90px;
+  display: flex;
+  align-items: center;
+}
+.goods4 .logogroup li img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.goods4 .logogroup li:first-child {
+  width: 456px;
+  text-align: center;
+  position: relative;
+}
+.goods4 .logogroup li:first-child span {
+  margin-top: 140px;
+  display: block;
+  font-size: 17px;
+}
+.goods4 .logogroup li:first-child img {
+  width: 190px;
+  height: 100px;
+  position: absolute;
+  top: 25px;
+  left: 73px;
+}
+.goods4 .logogroup li:first-child .chainz {
+  width: 100px;
+  height: 100px;
+  left: 282px;
 }
 
 .rightad {
@@ -234,8 +353,89 @@ footer {
   width: 100%;
   height: 281px;
   position: absolute;
-  background-color: green;
-  bottom: -2322px;
+  bottom: -2569px;
+}
+footer .topbox {
+  height: 150px;
+  width: 453px;
+  margin: 0 auto;
+}
+footer .topbox ul {
+  list-style: none;
+  float: left;
+  margin-right: 50px;
+}
+footer .topbox li {
+  font-size: 13px;
+  color: #004B91;
+  margin-bottom: 8px;
+  cursor: pointer;
+}
+footer .topbox li:first-child {
+  font-size: 16px;
+  margin: 6px 0 14px 0;
+  color: #333333;
+}
+footer .botbox .logo {
+  width: 100px;
+  margin: 0 auto;
+}
+footer .botbox .logo img {
+  margin: 0 auto;
+}
+footer .botbox .ul1 {
+  list-style: none;
+  width: 640px;
+  margin: 0 auto;
+}
+footer .botbox .ul1 a {
+  color: #004B91;
+  font-size: 11px;
+  text-decoration: none;
+}
+footer .botbox .ul1 li {
+  float: left;
+  padding: 0 6px;
+  border-right: 1px solid #999999;
+}
+footer .botbox .ul1 span {
+  font-size: 11px;
+  margin-left: 10px;
+  color: #767676;
+}
+footer .botbox .ul2 {
+  width: 374px;
+  margin: 1px auto;
+  list-style: none;
+}
+footer .botbox .ul2 a {
+  color: #004B91;
+  font-size: 11px;
+  text-decoration: none;
+}
+footer .botbox .ul2 li {
+  float: left;
+  padding: 0 6px;
+  border-right: 1px solid #999999;
+}
+footer .botbox .ul2 span {
+  color: #767676;
+  font-size: 11px;
+  margin-left: 10px;
+}
+footer .botbox .span1 {
+  width: 275px;
+  color: #767676;
+  font-size: 11px;
+  margin: 1px auto;
+  display: block;
+}
+footer .botbox .span2 {
+  width: 570px;
+  color: #767676;
+  font-size: 11px;
+  margin: 1px auto;
+  display: block;
 }
 
 .banner {
