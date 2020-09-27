@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+span {
+  display: block;
+}
+
+.logo {
+  width: 100px;
+  height: 60px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.icon-yamaxun {
+  font-size: 100px;
+}
+
+/*# sourceMappingURL=reg.css.map */

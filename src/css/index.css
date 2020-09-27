@@ -3,6 +3,26 @@
   padding: 0;
 }
 
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.fixad {
+  position: fixed;
+  bottom: 0px;
+  z-index: 1;
+  width: 600px;
+  height: 120px;
+  left: 400px;
+  display: none;
+}
+
 .topad {
   width: 100%;
   position: relative;
@@ -53,6 +73,7 @@ header .nav-list {
   border: 1px solid #ccc;
   border-radius: 4px;
   background-color: white;
+  z-index: 1;
 }
 header .nav-list ul {
   width: 160px;
@@ -63,18 +84,65 @@ header .nav-list ul {
   justify-content: space-evenly;
 }
 header .nav-list li {
-  margin: 0 15px;
+  text-indent: 10px;
   font-size: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .nav-list .weight {
+  font-weight: 600;
+}
+header .nav-list .weight span {
+  font-size: 14px;
+  color: #8c8c8c;
 }
 header .nav-list li:last-child {
   color: #666666;
+}
+header .nav-list a {
+  color: #000;
+  text-decoration: none;
+}
+header .nav-list a:hover {
+  color: #ff8c00;
+  text-decoration: underline;
+  font-weight: 600;
+}
+header .nav-list .icon-iconfontjiantou5 {
+  margin-right: 10px;
+  font-size: 13px;
+  color: #ccc;
+}
+header .nav-list .cartlist {
+  top: 0px;
+  left: 160px;
+  position: absolute;
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 400px;
+  width: 400px;
+  display: none;
+}
+header .nav-list .cartlist .active {
+  display: block;
+}
+header .nav-list .cartlist .item:first-child {
+  margin: 10px;
+}
+header .nav-list .cartlist .item:first-child h3 {
+  font-weight: normal;
+  color: #e47911;
+}
+header .nav-list .cartlist .item:first-child span {
+  color: #e47911;
 }
 header .nav-shop {
   height: 44px;
   top: 46px;
   left: 15px;
   position: absolute;
-  border: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -87,6 +155,9 @@ header .nav-shop span:last-child {
 }
 header .nav-shop span {
   margin: 0 10px;
+}
+header .nav-shop:hover {
+  border: 1px solid #ccc;
 }
 header .search {
   top: 11px;
@@ -105,14 +176,26 @@ header .search select {
 }
 header .search #ser {
   float: right;
-  width: 40px;
-  height: 33px;
+  position: relative;
+  width: 42px;
+  height: 35px;
+  border-color: #485059 #2c3137 #363c43 #485059;
+  background-color: #5B626A;
+  border-radius: 2px;
 }
 header .search img {
   float: right;
   position: absolute;
   right: -375px;
   top: -5px;
+}
+header .search .iconfont {
+  position: absolute;
+  right: 11px;
+  top: 8px;
+}
+header .search .icon-fangdajing {
+  color: white;
 }
 header .nav {
   width: 936px;
@@ -134,6 +217,10 @@ header .nav a {
   color: #05a;
   text-decoration: none;
 }
+header .nav a:hover {
+  text-decoration: underline;
+  color: #ff8c00;
+}
 header .leftmenu {
   float: left;
 }
@@ -147,7 +234,6 @@ header .rightmenu .menurig {
   position: absolute;
   top: 0px;
   height: 44px;
-  border: 1px solid #ccc;
   border-radius: 3px;
   cursor: pointer;
 }
@@ -161,11 +247,68 @@ header .rightmenu .menurig span:last-child {
 header .rightmenu .menurig span {
   margin: 0 10px;
 }
+header .rightmenu .menurig a {
+  color: #000000;
+}
+header .rightmenu .menurig .loginbox {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  z-index: 1;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+  position: absolute;
+  display: none;
+  cursor: default;
+}
+header .rightmenu .menurig .loginbox .logbtn {
+  display: block;
+  width: 160px;
+  height: 30px;
+  border: 1px solid #c89411;
+  background-image: linear-gradient(#fcf3dc, #efbc3d);
+  border-radius: 2px;
+  margin: 10px auto 0px;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+}
+header .rightmenu .menurig .loginbox span, header .rightmenu .menurig .loginbox .reg {
+  margin-top: -10px;
+  font-size: 12px;
+}
+header .rightmenu .menurig .loginbox .reg {
+  color: #0055aa;
+}
+header .rightmenu .menurig .loginbox .reg:hover {
+  color: #E47911;
+  text-decoration: underline;
+}
+header .rightmenu .menurig .loginbox ul {
+  border-top: 1px solid #eeeeee;
+  margin: 5px 10px 5px 10px;
+  list-style-type: none;
+}
+header .rightmenu .menurig .loginbox .li {
+  font-size: 13px;
+  color: #444444;
+}
+header .rightmenu .menurig:hover {
+  border: 1px solid #ccc;
+}
+header .rightmenu .menurig:hover .loginbox {
+  display: block;
+}
 header .rightmenu .x {
   left: 98px;
 }
 header .rightmenu .y {
   left: 182px;
+}
+header .rightmenu .y .icon-gouwuche {
+  display: block;
+  left: -15px;
+  position: absolute;
 }
 header .rightmenu .y span {
   font-size: 14px;
@@ -187,6 +330,21 @@ header .rightmenu .z span {
   height: 300px;
   width: 100%;
   background-color: grey;
+  overflow: hidden;
+}
+.banner .icon-iconfontjiantou1, .banner .icon-youjiantou {
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+}
+.banner .icon-iconfontjiantou1 {
+  left: 10px;
+}
+.banner .icon-youjiantou {
+  right: 10px;
+}
+.banner img {
+  transition: 0.6s;
 }
 
 .btfContent {
@@ -262,6 +420,35 @@ header .rightmenu .z span {
   padding: 0 24px;
 }
 
+.shadow {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  z-index: 4;
+  display: none;
+}
+.shadow .shadowbox {
+  width: 60%;
+  height: 80%;
+  margin: auto;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: white;
+  position: absolute;
+  z-index: 5;
+  border-radius: 3px;
+  display: none;
+}
+.shadow .shadowbox span {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
 .goods2 .listbox, .goods3 .listbox, .goods5 .listbox {
   width: 1150px;
   height: 322px;
@@ -269,7 +456,29 @@ header .rightmenu .z span {
   margin-top: 10px;
 }
 .goods2 .listbox .div1, .goods3 .listbox .div1, .goods5 .listbox .div1 {
+  position: relative;
   float: left;
+}
+.goods2 .listbox .div1 .btn, .goods3 .listbox .div1 .btn, .goods5 .listbox .div1 .btn {
+  position: absolute;
+  background-image: linear-gradient(#fcfcfd, #e7e9ec);
+  text-align: center;
+  line-height: 24px;
+  width: 160px;
+  height: 24px;
+  border: 1px solid #8d9096;
+  border-radius: 2px;
+  font-size: 13px;
+  bottom: 90px;
+  left: 30px;
+  display: none;
+  cursor: pointer;
+}
+.goods2 .listbox .div1 .btn:hover, .goods3 .listbox .div1 .btn:hover, .goods5 .listbox .div1 .btn:hover {
+  background-image: linear-gradient(#ebedf2, #d9dce1);
+}
+.goods2 .listbox .div1:hover .btn, .goods3 .listbox .div1:hover .btn, .goods5 .listbox .div1:hover .btn {
+  display: block;
 }
 .goods2 img, .goods3 img, .goods5 img {
   height: 270px;
@@ -353,7 +562,7 @@ footer {
   width: 100%;
   height: 281px;
   position: absolute;
-  bottom: -2569px;
+  bottom: -2600px;
 }
 footer .topbox {
   height: 150px;
@@ -365,6 +574,14 @@ footer .topbox ul {
   float: left;
   margin-right: 50px;
 }
+footer .topbox ul a {
+  color: #004B91;
+  text-decoration: none;
+}
+footer .topbox ul a:hover {
+  color: #E47911;
+  text-decoration: underline;
+}
 footer .topbox li {
   font-size: 13px;
   color: #004B91;
@@ -375,6 +592,7 @@ footer .topbox li:first-child {
   font-size: 16px;
   margin: 6px 0 14px 0;
   color: #333333;
+  cursor: text;
 }
 footer .botbox .logo {
   width: 100px;
@@ -392,6 +610,10 @@ footer .botbox .ul1 a {
   color: #004B91;
   font-size: 11px;
   text-decoration: none;
+}
+footer .botbox .ul1 a:hover {
+  text-decoration: underline;
+  color: darkorange;
 }
 footer .botbox .ul1 li {
   float: left;
@@ -412,6 +634,10 @@ footer .botbox .ul2 a {
   color: #004B91;
   font-size: 11px;
   text-decoration: none;
+}
+footer .botbox .ul2 a:hover {
+  color: darkorange;
+  text-decoration: underline;
 }
 footer .botbox .ul2 li {
   float: left;
@@ -437,6 +663,14 @@ footer .botbox .span2 {
   margin: 1px auto;
   display: block;
 }
+footer .botbox .span2 a {
+  color: #004B91;
+  text-decoration: none;
+}
+footer .botbox .span2 a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
 
 .banner {
   width: 1340px;
@@ -447,13 +681,14 @@ footer .botbox .span2 {
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 .banner #ban2 {
   display: none;
 }
 .banner .btn1, .banner .btn2 {
   position: absolute;
-  bottom: 298px;
+  bottom: -47px;
   width: 670px;
   height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
@@ -463,15 +698,16 @@ footer .botbox .span2 {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-}
-.banner .btn1 {
-  left: 179px;
-}
-.banner .btn2 {
-  right: 0px;
+  transition: 0.2s;
 }
 .banner .active {
   background-color: #ff8c00;
+}
+.banner .btn1 {
+  left: 0px;
+}
+.banner .btn2 {
+  right: 0px;
 }
 
 .itemcenter {
