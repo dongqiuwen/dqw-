@@ -5,17 +5,15 @@
 span{
     display: block;
 }
-
 .logo{
     width: 100px;
     height: 60px;
     display: flex;
     justify-content: center;
     margin:0 auto;
-    cursor: pointer;
 }
 .icon-yamaxun{
-    font-size: 100px;
+    font-size: 100px!important;
     margin-top: -10px;
 }
 .yam{
@@ -30,21 +28,11 @@ span{
 }
 .loginbox{
     width: 296px;
-    height: 480px;
+    height: 304px;
     margin: 10px auto;
     padding: 20px 26px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    .message{
-        display: none;
-        font-size: 13px;
-        color: #c40000;
-        .iconfont{
-            float: left;
-            width: 20px;
-            line-height: 20px;
-        }
-    }
     h5{
         font-weight: 400;
         font-size: 28px;
@@ -58,14 +46,14 @@ span{
     }
     .spanW{
         font-size: 12px;
-        margin-top: 10px;
+        margin-top: 18px;
         a{
             text-decoration: none;
             color: #0066c0;
         }
     }
     .line{
-        // margin-top: 60px;
+        margin-top: 60px;
         h5{
             left: 105px;
         }
@@ -111,23 +99,40 @@ input,.cont{
     margin-top: 7px;
     border-radius: 3px;
     border: 1px solid #a6a6a6;
-    position: relative;
 }
 input{
-    width: 278px;
-    padding-left: 10px;
+    width: 288px;
 }
 .cont{  
-    position: relative;
+    margin-top: 10px;
     height: 29px;
     background-image:linear-gradient(#faecc8,#f0c14c);
     color: #111;
     font-size: 13px;
     cursor: pointer;
-    margin-top: 10px;
 }
 .cont:hover{    
     background-image: linear-gradient(#f6da97,#eeb934);
+}
+.help{
+    .icon-youjiantou{
+        font-size: 10px;
+        cursor: pointer;
+    }
+    li:nth-child(2),li:nth-child(3){
+        display: none;
+        text-indent: 9px;
+    }
+    position: relative;
+    left: -98px;
+    top: 13px;
+    width: 100px;
+    li{
+        margin: 1px 0;
+    }
+    a{
+        font-size: 13px;
+    }
 }
 .wechat{
     width: 290px;
@@ -149,16 +154,14 @@ input{
     background-image: linear-gradient(#ebedf2,#d9dce1);
 }
 footer{
-    margin: 0px auto;
+    margin: 26px auto;
     width: 1400px;
     height: 2px;
-    position: relative;
-    bottom: -145px;
     background-color: #e0e0e0;
         .Lline{
         display: block;
         width: 100%;
-        height: 20px;
+        height: 44px;
         background-color: transparent;  
         background: linear-gradient(to right,#fff,rgba(255,255,255,0),#fff);
         z-index: 1;
@@ -194,7 +197,7 @@ ul{
     font-size: 11px;
     color: #555;
     position: relative;
-    top: 15px;
+    top: 34px;
     left: -207px;
 }
 

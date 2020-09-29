@@ -1,52 +1,10 @@
 *{
-    margin: 0;      
+    margin: 0;
     padding: 0;
-}
-html,body{
-    width: 100%;
-    height: 100%;
 }
 a{
     text-decoration: none;
-    color: #000000;
 }
-.fixad{
-    position: fixed;
-    bottom: 0px;
-    z-index: 1;
-    width: 600px;
-    height: 120px;
-    left: 400px;
-    display: none;
-}
-.topad{
-    width: 100%;
-    position: relative;
-    background:#f3c671;
-    height: 40px;
-    .imga{
-        position: relative;
-        background: url('https://images-cn-8.ssl-images-amazon.com/images/G/28/CN-Ad/xinjingdian20200920_82030._CB403944782_.jpg') center center no-repeat;
-        a{
-        display: block;
-        height: 40px;
-        }
-        .cta{
-            width: 30px;
-            height: 10px;
-            position: absolute;
-            right: 6px;
-            bottom: 13px;
-        }
-        img{
-            width: 30px;
-            height: 16px;
-        }
-    }
-
-    
-}
-
 header{
     height: 100px;
     width: 100%;
@@ -68,11 +26,12 @@ header{
     .nav-list{
         left: 15px;
         position: absolute;
-        bottom: -400px;
+        bottom: -390px;
         border: 1px solid #ccc;
         border-radius: 4px;
         background-color: white;
         z-index: 1;
+        display: none;
         ul{
             width: 160px;
             height: 400px;
@@ -80,6 +39,7 @@ header{
             display: flex;
             flex-direction: column;
             justify-content: space-evenly;   
+            padding-left: 0px;
         }
         li{
             text-indent:10px;
@@ -138,7 +98,8 @@ header{
             }
         }
 
-    }
+    }        
+    
     .nav-shop{
         height: 44px;
         top: 46px;
@@ -146,6 +107,7 @@ header{
         position: absolute;
         border-radius: 3px;
         cursor: pointer;
+        color: #000;
         span:first-child{
             font-size: 12px;
         }
@@ -159,6 +121,7 @@ header{
     }
     .nav-shop:hover{
         border: 1px solid #ccc;
+        
     }
     .search{
         top:11px;
@@ -257,6 +220,7 @@ header{
             }
             a{
                 color: #000000;
+                text-decoration: none;
             }
             .loginbox{
                 width: 200px;
@@ -295,6 +259,8 @@ header{
                     border-top: 1px solid #eeeeee;
                     margin: 5px 10px 5px 10px;
                     list-style-type: none;
+                    padding-left: 0;
+                    
                 }
                 .li{
                     font-size: 13px;
@@ -340,249 +306,97 @@ header{
         }
     }
 }
-.banner{
-    height: 300px;
-    width: 100%;
-    background-color: grey;
-    overflow: hidden;
-    
-    .icon-iconfontjiantou1,.icon-youjiantou{
-        font-size:50px;
-        position: absolute;
-        cursor: pointer;
-    }
-    .icon-iconfontjiantou1{
-        left: 10px;
-    }
-    .icon-youjiantou{
-        right:10px;
-    }
-    img{
-        transition: 0.6s;
-    }
-}
-.btfContent{
+
+.left{
+    width: 1128px;
+    height: 400px;
+    margin: 20px;
     float: left;
     position: relative;
-}
-.itemcenter{
-    width: 970px;
-    height: 162px;
-    // background-color: pink;
-    margin-left: 180.5px;
-}
-.goods1,.goods2,.goods3,.goods5{
-    width: 1149px;
-    margin: 40px 30px;
-    img{
-        width: 228px;
-        height: 250px;
-        background-color: #f9f9f9;
-    }
-    a{
-        margin-left: 10px;
-        text-decoration: none;
-        font-size: 14px;
-        font-weight: 500;
-    }
-    .div{
-        width: 227px;
-        height: 384px;
-        background-color: #fafafa;
-        margin-top: 10px;
-        margin-right: 2px;
-        float: left;
-    }
     h1{
+        font-weight: 500;
         font-size: 28px;
     }
-}
-.goods4{
-    width: 1149px;
-    margin: 40px 30px;
-    .div{
-        width: 227px;
-        height: 384px;
-        background-color: #fafafa;
+    span{
+        font-size: 13px;
+        position: absolute;
+        right: 7px;
+        top: 31px;
+    }
+    .cart{
         margin-top: 10px;
-        margin-right: 2px;
-        float: left;
-    }
-}
-.goods1,.goods4{
-    height: 427px;
-    // background-color: #ffa;
-    .title{
-        height: 40px;
-        display: block;
-    }
-    .price{
-        margin: 10px 0;
-        padding: 0 24px;
-        font-size: 17px;
-        color: #B12704;
-    }
-    h4{
-        margin: 10px 0;
-        padding: 0 24px;
-    }
-    .time{
-        margin: 10px 0;
-        padding: 0 24px;  
-    }
-
-}
-.shadow{
-    width: 100%;
-    height: 100%;
-    background-color: rgba($color: #000000, $alpha: 0.6);
-    position: fixed;
-    z-index: 4;
-    display: none;
-        .shadowbox{
-            width: 60%;
-            height: 80%;
-            margin: auto;
-            left: 0px;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            background-color: white;
-            position: absolute;
-            z-index: 5;
-            border-radius: 3px;
-            display: none;
-            span{
-                position: absolute;
-                right: 10px;
-                top: 5px;
-                cursor: pointer;
-            }
-        }
-}
-
-.goods2,.goods3,.goods5{
-    .listbox{
-        width: 1150px;
-        height: 322px;
-        border: 1px solid #d8d8d8;
-        margin-top: 10px;
-        .div1{
-            position: relative;
+        height: 205px;
+        width: 100%;
+        border-top: 1px solid #dddddd;
+        border-bottom: 1px solid #dddddd;
+        position: relative;
+        img{
             float: left;
-            .btn{
-                position: absolute;
-                background-image: linear-gradient(#fcfcfd,  #e7e9ec);
-                text-align: center;
-                line-height: 24px;
-                width: 160px;
-                height: 24px;
-                border: 1px solid #8d9096;
-                border-radius: 2px;
-                font-size: 13px;
-                bottom:90px;
-                left: 30px;
-                display: none;
-                cursor: pointer;
-            }
-            .btn:hover{
-                background-image: linear-gradient(#ebedf2,#d9dce1);
-            }
-        }
-        .div1:hover .btn{
             display: block;
+            width: 180px;
+            height: 180px;
         }
-    }
-    img{
-        height: 270px;
-    }
-    .det{
-        height: 52px;
-        width: 202px;
-        padding: 10px 14px 0 14px;
-        
-    }
-}
-.goods2,.goods3,.goods5{
-    height:365px;
-    // background-color: #ccc;
-}
-.goods4{
-    height: 654px;
-    // background-color: #faf;
-    .title{
-        margin-bottom: 10px;
-    }
-    .logogroup{
-        ul{
-            list-style-type: none;
+        a{
+            text-decoration: none;
+            font-size: 17px;
+            color: #0066c0;
+            display: block;
+            margin-top: 20px;
+            font-weight: 600;
         }
-        li{
-            width: 227px;
-            height: 200px;
-            margin-right: 2px;
-            margin-bottom: 2px;;
-            background-color: #f7f7f7;
-            float: left;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            .box{
-                width: 160px;
-                height: 90px;
-                display: flex;
-                align-items: center;
-            }
-            img{
-                max-width: 100%;
-                max-height: 100%;
-            }
+        a:hover{
+            color: #c45500;
+            text-decoration: underline;
         }
-        
-        li:first-child{
-            width: 456px;
-            text-align: center;
-            position: relative;
-            span{
-                margin-top: 140px;
-                display: block;
-                font-size: 17px;
-            }img{
-            width: 190px;
-            height: 100px;
+        .price{
+            font-size: 17px;
+            top: 18px;
+            color: #0F1111;
+            font-weight: 600;
+            right: 8px;
             position: absolute;
-            top: 25px;
-            left: 73px;
-        }.chainz{
-            width: 100px;
-            height: 100px;
-            left: 282px;
         }
+        #num{
+            border-radius: 7px;
+            border: 1px solid #d5d9d9;
+            background-color: #fff;
+            width: 50px;
+            height:30px;
+            margin-top: 50px;
+            cursor: pointer;
+            outline: none;
+            option{
+                width: 100px;
+            }
         }
-        
-        
+        #num:hover{
+            background-color: #f7fafa;
+        }
+        .delete{
+            cursor: pointer;
+            font-size: 12px;
+            color: #0066C0;
+            left: 263px;
+            top: 98px;
+        }
+        .delete:hover{
+            color:#e47911;
+            text-decoration: underline;
+        }
+        .sum{
+            position:absolute;
+            right: 135px;
+            bottom: -30px;
+        }
     }
 }
-.rightad{
-    width: 310px;
-    height: 1737px; 
-    float: right;
-    background-color: yellowgreen;
-}
-.maincontent{
-    position: relative;
-}
+
+
 footer{
-    width: 100%;
-    height: 281px;
-    position: absolute;
-    // background-color: green;
-    bottom: -2600px;
-    // text-align: center;
+    position: relative;
+    bottom: 0;
     .topbox{
-        height: 150px;
-        width: 453px;
+        width: 543px;
         margin: 0 auto;
 
         ul{
@@ -614,6 +428,9 @@ footer{
     
     
     .botbox{
+        position: relative;
+        bottom: 0;
+        height: 50px;
         .logo{
             width: 100px;
             margin: 0 auto;
@@ -694,130 +511,3 @@ footer{
         }   
     }
 }
-.banner{
-    width: 1340px;
-    height: 300px;
-    background-color: beige;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    position: relative;
-    #ban2{
-        display: none;
-    }   
-    .btn1,.btn2{
-        position: absolute;
-        bottom: -47px;
-        width: 670px;
-        height: 50px;
-        background-color: rgba($color: #000000, $alpha: 0.5);
-        color: white;
-        display: flex;
-        font-size: 12px;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        transition: 0.2s;
-    }
-    .active{
-        background-color: #ff8c00;
-    }
-    .btn1{
-        left: 0px;
-    }
-    .btn2{
-        right: 0px; 
-    }
-    
-    
-}
-.itemcenter{
-    margin-right: 20px;
-    .item1,.item2,.item3{
-        margin: 10px 10px;
-        width: 300px;
-        position: relative;
-        height: 154px;
-        float: left;
-        span{
-            font-size: 16px;
-            font-weight: 600;
-        }
-        span:nth-child(2){
-            color: #cd4d21;
-        }
-        img{
-            position: absolute;
-            z-index: -10;
-        }
-    }.item1{
-        img{
-            top: 10px;
-            left: 10px;
-        }
-    }
-    .item1,.item2{
-        border-right: 1px solid #e8e8e8;
-    }
-    .item2{
-        a{
-            font-size: 18px;
-            text-decoration: none;
-            color: #b12704;
-            font-weight: 600;
-        }
-        span:last-child{
-            font-size: 12px;
-            font-weight: normal;
-        }
-        span:nth-child(2){  
-            font-weight: 600;
-            font-size: 16px;
-            position: absolute;
-        }
-        img{
-            top:10px;
-            right: 10px;
-            // right: 150px;
-        }
-    }
-    .item3 img{
-        right:1px;
-        top: 20px;
-    }
-    title{
-        height: 30px;
-        width: 100px;
-        span:nth-child(2){
-            color: #cd4d21;
-            font-size: 16px;
-        }
-    }
-}
-.rightad{
-    width: 310px;
-    background-color: #f9f9f9;
-    text-align: center;
-    img:first-child{
-        margin-top:10px;
-    }
-    
-}
-.tad1,.tad2,.tad3{
-    width: 265px;
-    height: 290px;
-    margin: 10px auto;
-    border-top: 1px solid #e8e8e8;
-    img{
-        margin-top: 5px;
-    }
-}
-.tad3{
-    border-bottom: 1px solid #e8e8e8;
-}
-
-
-
-
