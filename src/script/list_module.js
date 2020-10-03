@@ -9,7 +9,7 @@ define(['pagination', 'jlazyload'], function () { //依赖分页和懒加载
             let next = null; //后一个价格
             const $list = $('.list1');
             $.ajax({
-                url: 'http://192.168.13.18/JS2007/php/listdata.php',
+                url: 'http://localhost/JS2007/php/listdata.php',
                 dataType: 'json'
             }).done(function (data) {
                 let $strhtml = '<ul>';
@@ -58,7 +58,7 @@ define(['pagination', 'jlazyload'], function () { //依赖分页和懒加载
                 callback: function (api) {
                     console.log(api.getCurrent()); //获取的页码给后端
                     $.ajax({
-                        url: 'http://192.168.13.66/projectname/php/listdata.php',
+                        url: 'http://localhost/JS2007/php/listdata.php',
                         data: {
                             page: api.getCurrent() //传输页面
                         },

@@ -1,3 +1,7 @@
+#ser{
+    position: absolute;
+    right: 0px;
+}
 .main{
     height: 1000px;
     width: 100%;.topbox{
@@ -79,6 +83,17 @@
     }
     
     
+}
+#ser{
+    float: right;
+    position: relative;
+    width: 42px;
+    height: 35px;
+    border-color: #485059 #2c3137 #363c43 #485059;
+    background-image: linear-gradient(#878c92, #505860);
+    border-radius: 2px;
+    cursor: pointer;
+    border-width: 1px;
 }
 
 

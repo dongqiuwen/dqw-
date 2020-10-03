@@ -7,6 +7,61 @@ a {
   text-decoration: none;
 }
 
+.right {
+  width: 300px;
+  height: 133px;
+  float: right;
+  margin-right: 14px;
+  margin-top: 18px;
+  border: 1px solid #dddddd;
+}
+.right .top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  margin-left: 15px;
+  font-size: 12px;
+  color: #007600;
+}
+.right .bot {
+  height: 54px;
+  padding: 14px 18px;
+  background-color: #f3f3f3;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.right .btn {
+  width: 260px;
+  height: 30px;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border-radius: 2px;
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4) inset;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #a88734;
+  text-align: center;
+  line-height: 30px;
+  font-size: 13px;
+  position: relative;
+  top: -42px;
+  left: 20px;
+  cursor: pointer;
+}
+.right .btn .block {
+  width: 20px;
+  height: 20px;
+  border-radius: 3px;
+  background-color: #111;
+  color: #fff;
+  line-height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 5px;
+}
+.right .btn:hover {
+  background-image: linear-gradient(#f9e7bb, #eeba35);
+}
+
 header {
   height: 100px;
   width: 100%;
@@ -147,7 +202,7 @@ header .search #ser {
   cursor: pointer;
   border-width: 1px;
 }
-header .search #ser #ser:hover {
+header .search #ser:hover {
   background-image: linear-gradient(#71767e, #3a424c);
 }
 header .search img {
@@ -385,13 +440,14 @@ footer {
   bottom: 0;
 }
 footer .topbox {
-  width: 543px;
+  width: 588px;
   margin: 0 auto;
 }
 footer .topbox ul {
   list-style: none;
   float: left;
   margin-right: 50px;
+  margin-left: 55px;
 }
 footer .topbox ul a {
   color: #004B91;

@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amazon 商品详情页</title>
     <link rel="stylesheet" href="css/cart.css">
-    <link rel="stylesheet" href="css/detail.css">
+    <script src="./css/det/iconfont.js"></script>
     <link rel="stylesheet" href="./css/index/iconfont.css">
     <link rel="stylesheet" href="./css/index/iconfont1.css">
     <link rel="stylesheet" href="./css/index/iconfont2.css">
+    <link rel="stylesheet" href="css/detail.css">
 </head>
 
 <body>
@@ -170,7 +171,218 @@
         </div>
     </header>
 
-    <div class="main"></div>
+    <div class="goodsinfo">
+        <div class="buybox">
+            <a class="spanT">购买前请先选择<b>尺寸</b></a>
+            <div class="line"></div>
+            <a class="habit" href="">加入心愿单</a>
+        </div>
+        <div class="wrap">
+            <div id="spic">
+                <img src="" alt="" id="smallpic">
+                <div id="sf"></div>
+            </div>
+            <div id="bf">
+                <img src="" alt="" id="bpic">
+            </div>
+            <div id="ulist">
+                <div id="list1">
+                    <ul>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="goodsinfo-word">
+            <div class="line1"></div>
+            <div class="outside">
+                <h3>亚马逊海外购</h3>
+                <ul>
+                    <li>由境外网站所在的原销售地的品牌商提供售后保修，可能不覆盖中国，详询品牌商售后。</li>
+                    <li>购买海外购商品需要提供身份证信息用于清关（清关时间延长有可能影响部分订单的实际送达日期）。</li>
+                    <li>商品的尺码/适龄/标签和说明书的语言等可能与本地不同。</li>
+                </ul>
+            </div>
+            <div class="p-name">
+                <a class="loadtitle" href="##"></a>
+            </div>
+            <div class="spanM"><a href="#">原文</a><span>页面含机器翻译，中文仅供参考，以原文为准</span></div>
+            
+            <div class="star">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xingxing">
+                    </use>
+                </svg>
+            </div>
+            <hr>
+            <div class="p-price"><a class="priceT">价格：</a><strong><a>￥</a><a class="loadpcp"></a></strong></div>
+            <div class="p-color">颜色：<a>黑色</a>
+                <div class="color">
+                <div class="colorbtn hs">
+                </div>
+                <div class="colorbtn bs">
+                </div> 
+                </div>
+
+            </div>
+            <div class="p-size">数量：<a></a></div>
+            <span></span>
+            <div class="p-btn">
+                <input type="text" id="count" value="1" />
+                <a href="javascript:;">加入购物车</a>
+                <p href="#">尺码对照</p>
+            </div>
+        </div>
+        <div class="mar"><div class="tips">
+            <h2>海外购小贴士</h2>
+            <ul class="ul1">
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-01._CB485942410_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>纯正海外货</h4>
+                        <span>海外购商店囊括两千万选品，所有商品均为亚马逊海外网站在售商品，无需转运及代购环节。</span>
+                </div>
+                </li>
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-02._CB485945348_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>直邮超值价</h4>
+                        <span>全部商品由海外直邮，为您提供高性价比、高品质的海外商品。商品价格、运费、进口税费清晰透明，付费更便捷。</span>
+                </li>
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-02._CB485945348_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>会员享免邮</h4>
+                        <span>逾千万海外购商品免邮，全年无限次！海外购单笔订单(可跨美国/英国/日本/德国)0门槛即可享。</span>
+                </li> 
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-04._CB485921805_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>税费轻松缴</h4>
+                        <span>下单时预估并代收进口税费，如实际税费与代收金额不符，多收的金额将退还至您的海外购账户，少收部分无需您补交。
+                        </span>
+                </li>
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-04._CB485921805_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>跨境及时到</h4>
+                        <span>亚马逊海外站点直接发货。亚马逊全球领先的物流服务让商品配送更加安全、可靠、快捷。配送过程可追踪。</span>
+                </li>
+                <li>
+                    <img src="https://images-cn-8.ssl-images-amazon.com/images/G/28/ags/ags-tips-06._CB485948264_.jpg" alt="">
+                    <div class="textbox">
+                        <h4>服务本地化</h4>
+                        <span>可用中文浏览、搜索及购买海外商品，一扫语言障碍。本地化支付让海淘更加便捷，还有中国客服提供全面、专业的问题解答。</span>
+                </li>
+            </ul>
+            <div class="buytip">
+                <h3>购买提示</h3>
+                <span>1. 商品和服务差异<br>
+                    亚马逊海外购商品由亚马逊海外网站出售，适用使用境外网站所在的原销售地的法律、法规、标准、规范和惯例等，因此可能在以下方面区别于在中国境内出售的商品：<br>
+                    • 尺码：<a class="a1" href="#">鞋服尺码表</a>，<a class="a1" href="#">单位转换表。</a>备注: 如果销售品牌提供了具体的尺码表，请以品牌尺码表为准。<br>
+                    • 电压和电源插座：电子产品可能不支持中国的电压环境、电源插座等规格标准，需配合变压或转换设备等使用。<a class="a2" href="#">电源使用提示</a>。<br>
+                    • 美妆商品保质期：美妆商品的生产日期／保质期标注可能和国内渠道购买的产品有所区别，详见<a class="a2" href="#">美妆商品购买提示</a>。<br>
+                    • 售后服务：亚马逊海外购的商品由境外网站所在的原销售地的品牌商提供售后保修，该等保修和其他售后可能不覆盖中国，详情请联系品牌商的售后咨询。<br>
+                    • 标签、手册和说明书：标签、手册和说明书等未译成中文；所载成分、声称、产品描述、参考值和推荐值可能与中国标准或惯例有别。<br>
+                    • 其他：因出售地和使用地人群(特别是儿童、老人和残疾人等)、使用环境、消费场景与习惯不同，可能导致商品不能或不能完全适用于使用目的。<br><br>
+                    
+                    2. 清关服务：<br>
+                    • 根据中国海关的要求，在您购买亚马逊海外购商品时，需要提交订购人的身份证信息（目前仅支持中国居民身份证信息验证）用于清关<a class="a2" href="#">点击这里查看详情</a>。<br>
+                    • 亚马逊不会以任何理由索要您的银行卡号、验证码等信息。如遇不法分子冒充亚马逊海外购客服向您索取银行账号等信息，请及时通过联系亚马逊海外购客服或报警，敬请提高警惕。<br><br>
+                    
+                    3. 物流配送：<br>
+                    • 关于配送时间的预估仅供参考，实际配送受清关或天气等不可抗力因素的影响，您可在“我的订单”中跟踪包裹查看配送状态，如有疑问请联系客服咨询。<br>
+                    • 亚马逊海外购商品符合海关进出口政策要求，且支持中国除港澳台地区之外的全境配送，但部分偏远地区的配送时间会相应延长，少数商品不支持配送。如果您已成功下单而我们无法为您配送，我们会及时通知您。<br>
+                    • 亚马逊海外购商品目前不支持晚间送货、预约送货、自提等服务。<br><br>
+                    
+                    4. 其他：亚马逊海外购出售的境外商品仅限个人自用，购买行为必须遵循自用、合理数量原则，不得转为其他商业用途，不得再次销售。<br><br>
+                    
+                    5. 需要更多帮助，<a class="a2" href="#">请查看亚马逊海外购帮助中心</a>。</span>
+            </div>
+        </div></div>
+        
+        <div class="question">
+            <h2>买家问题和答案</h2>
+            <div class="que">
+                <span class="iconfont icon-fangdajing"></span>
+                <input type="text" placeholder="有问题吗？搜索答案"> 
+            </div>
+            <ul>
+                <a>关于商品的典型问题：</a>
+                <li> - 此商品是否耐用？</li>
+                <li>- 此商品是否容易使用？</li>
+                <li>- 此商品的尺寸如何？</li>
+            </ul>
+        </div>
+
+        <div class="comment">
+            <h2>买家评论</h2>
+            <div class="star">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-star">
+                    </use>
+                </svg>
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xingxing">
+                    </use>
+                </svg>
+                <span class="score">4.2，满分5</span>
+            </div>
+            <a class="buyer" href="javascript:;">15 买家评级</a>
+            <ul>
+                <li>
+                    <a href="">5星<div class="linebox"></div>0%</a>
+                </li>
+                <li>
+                    <a href="">4星<div class="linebox"></div>0%</a>
+                </li>
+                <li>
+                    <a href="">3星<div class="linebox"></div>0%</a>
+                </li>
+                <li>
+                    <a href="">2星<div class="linebox"></div>0%</a>
+                </li>
+                <li>
+                    <a href="">1星<div class="linebox"></div>0%</a>
+                </li>
+            </ul>
+            <a href="#" class="cal">评级是如何计算的？</a>
+            <div class="cal"></div>
+            <div class="com">
+                <h3>评论该商品</h3>
+                <span>与其他买家分享您的想法</span>
+                <a class="habit" href="">我要写评论</a>
+            </div>
+        </div>
+    </div>
 
     <footer>
         <div class="topbox">
@@ -230,5 +442,5 @@
 <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
 <script src="./js/cart.js"></script>
 <script src="./js/index.js"></script>
-
+<script src="./js/detail.js"></script>
 </html>

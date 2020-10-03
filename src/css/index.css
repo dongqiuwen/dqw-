@@ -189,6 +189,9 @@ header .search #ser {
 header .search #ser #ser:hover {
   background-image: linear-gradient(#71767e, #3a424c);
 }
+header .search #ser:hover {
+  background-image: linear-gradient(#71767e, #3a424c);
+}
 header .search img {
   float: right;
   position: absolute;
