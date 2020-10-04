@@ -415,6 +415,9 @@ header{
             position: absolute;
         }
         #num{
+            text-align: center;
+            line-height: 30px; 
+            float: left;
             border-radius: 7px;
             border: 1px solid #d5d9d9;
             background-color: #fff;
@@ -423,9 +426,6 @@ header{
             margin-top: 50px;
             cursor: pointer;
             outline: none;
-            option{
-                width: 100px;
-            }
         }
         #num:hover{
             background-color: #f7fafa;

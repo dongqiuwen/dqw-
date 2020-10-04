@@ -9,6 +9,35 @@
     fill: currentColor;
     overflow: hidden;
   }
+  #bf{
+    position: absolute;
+    width: 750px;
+    height: 650px;
+    z-index: 100;
+    overflow: hidden;
+    left: 650px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 8px 2px;
+    border: 1px solid rgb(148, 148, 148);
+    background-color: #fff;
+    visibility: hidden;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1000px;
+        height: 1000px;
+    }
+}
+#sf{
+    width: 50px;
+    height: 50px;
+    background: #8eb2e7;
+    opacity: 0.3;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    visibility: hidden;
+}
 .wrap {
     float: left;
     position: relative;
@@ -24,25 +53,7 @@
             height: 100%;
         }
     }
-    #bf{
-        position: absolute;
-        width: 750px;
-        height: 650px;
-        z-index: 100;
-        overflow: hidden;
-        left: 650px;
-        box-shadow: rgba(0, 0, 0, 0.25) 0px 6px 8px 2px;
-        border: 1px solid rgb(148, 148, 148);
-        background-color: #fff;
-        visibility: hidden;
-        img{
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 1000px;
-            height: 1000px;
-        }
-    }
+
     ul {
         list-style: none;
         float: left;
@@ -516,11 +527,14 @@
             left: -53px;
             top: 0px;
             height: 345px;
-
+            .active{
+                box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
+                border-color: #e77600;
+            }
            li{
             float: none;
             margin-top: 6px;
-            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset;
+            box-shadow: 0 1px 0 rgba(255, 255, 255, 0.6) inset; 
             background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
             border-radius: 2px;
             width: 38px;
@@ -534,10 +548,7 @@
                 max-width: 100%;
                 max-height: 100%;
             }
-            .active{
-                box-shadow: 0 0 3px 2px rgba(228,121,17,.5);
-                border-color: #e77600;
-            }
+
         }   
         }
           
